@@ -1,102 +1,116 @@
 @media only screen and (min-width: 200px) {
 	body {
-		background-image: url(https://gcs.thesouthafrican.com/2019/04/e950837b-8604491704_aab901c362_k-1200x858.jpg);
-		font-family: 'Staatliches', cursive,
+		font-family: 'Press Start 2P', cursive;
+		background-color: black;
+		color: #0dff00;
 	}
 	.header {
 		text-align: center;
 	}
 	.example {
 		text-align: center;
+		font-family: 'Press Start 2P', cursive;
 	}
 	.main {
 		text-align: center;
 	}
-	.radio {
+	.filter {
 		text-align: center;
 		margin-top: 2em;
-		color: #21423c;
-		text-shadow: 1px 1px 2px #d6fff4;
+		color: #000000;
+		
+		font-family: 'Press Start 2P', cursive;
 	}
 	.displayReg {
 		margin-top: 2em;
 		text-align: center;
 		padding: 2em;
-		color: #fefffe;
-		text-shadow: 1px 1px 2px #d6fff4;
+		font-family: 'Press Start 2P', cursive;
+		font-stretch: expanded;
+		color: #0dff00;
+		
 	}
 	.ol {
 		text-align: center;
 	}
 	.li {
 		text-align: center;
+		font-family: 'Press Start 2P', cursive;
 	}
 	input {
 		text-align: center;
 		padding: 10px;
 		border-radius: 10px;
 		font-size: 15px;
+		font-family: 'Press Start 2P', cursive;
 	}
 	button {
 		cursor: default;
 		padding: 9px;
+		background:#0dff00;
+		color: #000;
 		border-radius: 12px;
 		font-size: 20px;
+		font-family: 'Press Start 2P', cursive;
+		
 	}
-	input[type='radio'] {
-		width: 1em;
-		height: 1em;
+	.the_list {
+		text-align: center;
 	}
-	input[type='radio']:checked:after {
-		width: 1em;
-		height: 1em;
-		border-radius: 15px;
-		top: -2px;
-		left: -1px;
-		position: relative;
-		background-color: #155a96;
-		content: '';
-		display: inline-block;
-		visibility: visible;
-		border: 1px solid white;
-	}
+	
 	button:hover, button:focus {
-		background-color: #155a96;
+		background-color: #0dff00;
+		color: #000;
 	}
 	h1 {
-		color: #21423c;
-		font-family: 'Rouge Script', cursive;
-		font-size: 4em;
+		color: #0dff00;
+		font-family: 'Press Start 2P', cursive;
+		font-size: 3em;
 		padding-top: 1em;
 		font-weight: normal;
 		line-height: 48px;
 		margin: 0 0 50px;
 		text-align: center;
-		text-shadow: 1px 1px 2px #d6fff4;
+		
 	}
 	h2 {
-		color: #a7e8f8;
-		font-family: 'Julius Sans One', sans-serif;
+		color: #0dff00;
+		font-family: 'Press Start 2P', cursive;
 		font-size: 22px;
 		font-weight: bold;
 		line-height: 32px;
 		margin: 0 0 24px;
-		text-shadow: 1px 1px 1px #082b34;
+	
 	}
 	p {
-		color: #21423c;
-		text-shadow: 1px 1px 2px #d6fff4;
-		font-family: 'Carme', sans-serif;
+		color: #0dff00;
+		
+		font-family: 'Press Start 2P', cursive;
 		font-size: 25px;
 		line-height: 24px;
 		margin: 0 0 24px;
 	}
 	a {
-		color: #CEF0D4;
+		color: #000000;
 		text-decoration: underline;
 	}
 	a:hover {
 		color: #a7e8f8;
 		text-decoration: underline;
+	}
+	.dropDown {
+		text-align: center;
+		margin: 0.5em;
+	}
+	.clear {
+		padding-top: 2em;
+		font-family: 'Press Start 2P', cursive;
+		text-align: center;
+	}
+	li {
+		padding: 1em;
+		/* margin: auto; */
+		list-style: none;
+		font-family: 'Press Start 2P', cursive;
 	}
 }

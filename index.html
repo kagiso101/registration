@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>registrations</title>
 </head>
 
@@ -22,31 +23,27 @@
         <button class="btn" id="addBtn">Add</button>
     </div>
 
-    <div class="radio">
-        <input type="radio" class="buttons" value="all" name="place" checked >
-        <label for="all" >Show All</label>
-        
-        <input type="radio" class="buttons" value="CA" name="place">
-        <label for="cpt">Cape Town</label>
-
-        <input type="radio" class="buttons" value="CY" name="place">
-        <label for="bellville">Bellville</label>
-
-        <input type="radio" class="buttons" value="CJ" name="place">
-        <label for="paarl">Paarl</label>
-
-        <!-- 
-        <button class="btn" id="filterBtn">Filter</button> -->
+    <div class="dropDown ">
+        <select name="filter" class="filter">
+            <option value="all">All</option>
+            <option value="CA">Cape Town</option>
+            <option value="CJ">Paarl</option>
+            <option value="CY">Bellville</option>
+        </select>
     </div>
-    <div class="displayReg" id="display">
-        <!---where reg numb will display-->
- <!-- <ol>
-     <li>CA 435985</li>
-     <li>CA 166589</li>
- </ol> -->
+    <div class="clear">
+        <button class="clearBtn">Clear items</button>
+    </div>
+
+    </div>
+
+    <ul class="the_list">
+    <div class="displayReg" id="display"></div>
+    </ul>
 
     </div>
 </body>
-<script src="dom/registration.js" charset="UTF-8"></script>
 <script src="factory/registration-factory.js" charset="UTF-8"></script>
+<script src="dom/registration.js" charset="UTF-8"></script>
+
 </html>
