@@ -12,7 +12,7 @@ var display = document.getElementById("display")
 var clearBtn = document.querySelector(".clearBtn")
 var filter = document.querySelector(".filter")
 // window.addEventListener("load", function(){
-  
+
 // })
 
 
@@ -31,16 +31,8 @@ function showReg() {
 showReg()
 function addBtnClicked() {
     theList.innerHTML = ""
-    var regItem = inputBox.value
+    var regItem = inputBox.value.toUpperCase()
     var checkingReg = reg.regCheck(regItem)
-    if (checkingReg === false) {
-        display.innerHTML = "Registration number is invalid/has been entered"
-    }
-    if (regItem === "") {
-        display.innerHTML = "Enter a registration number"
-    }
-
-
     var regList = reg.allReg()
     localStorage['registration'] = JSON.stringify(regList)
     showReg()
@@ -59,10 +51,13 @@ function filtering() {
     var town = filter.value
 
     var townSelected = reg.radioBtnSelected(town)
+    for (var i = 0; i < townSelected.length;i++) {
+        var filterdTown = townSelected[i]
+        var filteredElement = document.createElement("li")
+        filteredElement.innerHTML = filterdTown
+        theList.appendChild(filteredElement)
+    }
 
-    var filteredElement = document.createElement("li")
-    filteredElement.innerHTML = townSelected
-    theList.appendChild(filteredElement)
 }
 
 
