@@ -6,12 +6,12 @@ function RegDisplay(regList) {
     function regCheck(regNumb) {// does not add empty input and adds all valid regNumb to array
 
         if (regNumb !== "") {//if input is not empty
-            if (/C[AYJ] \d{3,6}$/.test(regNumb) || /C[AYJ] \d{3}-\d{3}$/.test(regNumb) && !allRegNumbers.includes(regNumb)) {
+            if (/C[AYJ] \d{3,6}$/.test(regNumb) && !allRegNumbers.includes(regNumb) || /C[AYJ] \d{3}-\d{3}$/.test(regNumb) && !allRegNumbers.includes(regNumb)) {
                 allRegNumbers.push(regNumb)//conditions met then push to regNumbers
             }
-            else {
-                display.innerHTML = "Enter a valid regNumber"; //if conditions not met then false 
-            }
+        }
+        else {
+            return false //if conditions not met then false 
         }
     }
 
